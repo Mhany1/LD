@@ -1,0 +1,138 @@
+$gray_color: #0F526E;
+
+.container {
+    .heading {
+        p {
+            font: normal normal 600 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #5E6282;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font: normal normal bold 40px/67px Volkhov;
+            letter-spacing: 0px;
+            color: #14183E;
+            text-transform: capitalize;
+        }
+    }
+
+    .row {
+        .col {
+            .one_category {
+                background: #E3E3E3 0% 0% no-repeat padding-box;
+                font: normal normal medium 18px/24px Google Sans;
+                color: $gray_color;
+                border-radius: 10px;
+            }
+
+            .one_category_active {
+                background: #0ECEFF 0% 0% no-repeat padding-box;
+                font: normal normal medium 18px/24px Google Sans;
+                color: #FFFFFF;
+                border-radius: 10px;
+            }
+
+
+        }
+    }
+
+    button {
+        background-color: #FF7C16;
+        box-shadow: 0px 20px 70px #F1A50126;
+        border-radius: 10px;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 100%; /* Full width for the container */
+}
+
+.row {
+    display: flex; /* Flexbox layout for the row */
+    align-items: center; /* Center columns vertically */
+    position: relative; /* Allow absolute positioning of child elements */
+}
+
+.column {
+    flex: 1; /* Equal width for each column */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: stretch; /* Stretch images to full width */
+    padding: 0;
+}
+
+.image {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+    filter: contrast(0.7);
+    cursor: pointer; /* Hand icon */
+    // height: 220px;
+}
+
+.center-column {
+    display: flex;
+    justify-content: center; /* Center the images in the column */
+    align-items: center; /* Center vertically */
+}
+
+.top-column {
+    position: relative;
+    background-color: #F215B6; /* Set the background color */
+    min-height: 100%; /* Ensure the column takes full height */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    bottom: 56px;
+    // padding-bottom: 7.8%;
+}
+
+.second_section {
+    background-color: #F215B6;
+    padding:8% 0% 3.5% 6%;
+    text-align: right;
+    line-height: normal;
+    padding-left: 40px; /* Increase left padding as needed */
+    position: relative; /* Create a positioning context */
+    z-index: 1; /* Set a z-index for stacking order */
+
+    h1 {
+        color: #253776;
+        font-size: 50px;
+    }
+
+    p {
+        color: #FFFFFF;
+        font-size: 21px;
+        text-align: right;
+        margin-left: 30%;
+    }
+}
+
+/* Additional styles for the columns to ensure they overlap the second section */
+.row .column {
+    position: relative;
+    z-index: 2;
+    // right: -2%;
+}

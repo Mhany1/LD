@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "title": "Transformation",
+            "imageSrc": "https://up6.cc/2024/10/172963186155451.png",
+            "url":"https://example.com/page1"
+        },
+        {
+            "title": "Envision",
+            "imageSrc": "https://up6.cc/2024/10/172963186158222.png",
+            "url":"https://example.com/page2"
+        },
+        {
+            "title": "Dynamics 365",
+            "imageSrc": "https://up6.cc/2024/10/172963186160193.png",
+            "url":"https://example.com/page3"
+        },
+        {
+            "title": "Crafty Mind",
+            "imageSrc": "https://up6.cc/2024/10/172963186162024.png",
+            "url":"https://example.com/page4"
+        },
+        {
+            "title": "Services",
+            "imageSrc": "https://up6.cc/2024/10/172963186155451.png",
+            "url":"https://example.com/page5"
+        }
+    ]
+}
+

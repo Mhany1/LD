@@ -43,5 +43,14 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/Mhany1/LD
    cd your-repo
+
+2. Clone the repository:
+
+   npm install
+
+3. Development Server:
+
+   ng serve
+

@@ -1,0 +1,38 @@
+<section class="container">
+    <div class="text-center heading mb-md-3">
+      <p>Media</p>
+      <h1>Top News</h1>
+    </div>
+    
+    <!-- Categories Row -->
+    <div class="row col-lg-9 col-12 m-auto">
+      <div class="col" *ngFor="let category of categories">
+        <p class="text-center px-2 py-1 pointer one_category" 
+           [ngClass]="{'one_category_active': activeCategoryId == category.id}"
+           (click)="filterNewsByCategory(category?.id)">
+          {{category?.name}}
+        </p>
+      </div>
+    </div>
+  
+    <!-- News Cards -->
+    <div class="row d-flex justify-content-between mt-3" *ngIf="filteredNews && filteredNews.length">
+      <div class="col-lg-4 col-md-6 col-12 mb-md-3 mb-2" style="display: contents;"
+        *ngFor="let row of (showAllNews ? filteredNews : filteredNews.slice(0, 6))">
+        <app-card-news [new]="row" class="mb-3"></app-card-news>
+      </div>
+  
+      <!-- Toggle View All Button -->
+      <div class="d-flex justify-content-center" *ngIf="filteredNews && filteredNews.length > 6">
+        <button class="px-5 py-3 my-3" (click)="toggleShowAll()">
+          {{ showAllNews ? 'Show Less' : 'View All News' }}
+        </button>
+      </div>
+    </div>
+  
+    <!-- No Data Message -->
+    <div class="text-center" *ngIf="filteredNews && filteredNews.length == 0">
+      <h2>No data available</h2>
+    </div>
+  </section>
+  

@@ -1,0 +1,47 @@
+<section class="bg-light mb-lg-4 mb-3">
+    <section class="d-flex align-items-center justify-content-end position-relative section-content">
+      <div class="row align-items-center img-container">
+        
+        <!-- First Column -->
+        <div class="col-lg-3 col-md-4 col-12 px-0">
+          <div *ngFor="let image of column1" class="image-wrapper">
+            <img [src]="image.imageSrc" [alt]="image.title" class="image" />
+            <div class="image-title">{{ image.title }}</div>
+            <a [href]="image?.url" class="read-more" target="_blank"><i class="fa-light fa fa-arrow-right"></i> Read more</a>
+          </div>
+        </div>
+  
+        <!-- Second Column -->
+        <div class="col-lg-3 col-md-4 col-12 px-0">
+          <div *ngFor="let image of column2" class="image-wrapper">
+            <img [src]="image.imageSrc" [alt]="image.title" class="image" />
+            <div class="image-title">{{ image.title }}</div>
+            <a [href]="image?.url" class="read-more" target="_blank"><i class="fa-light fa fa-arrow-right"></i> Read more</a>
+          </div>
+        </div>
+  
+        <!-- Third Column -->
+        <div class="col-lg-3 col-md-4 col-12 px-0">
+          <div *ngFor="let image of column3" class="image-wrapper position-relative">
+            <img [src]="image.imageSrc" [alt]="image.title" class="image" />
+            <div class="image-title">{{ image.title }}</div>
+            <a [href]="image?.url" class="read-more" target="_blank"><i class="fa-light fa fa-arrow-right"></i> Read more</a>
+          </div>
+          <div class="spacer d-md-block d-none"></div>
+        </div>
+      </div>
+  
+      <!-- Text Section -->
+      <div class="py-md-5 text-container">
+        <div class="second-section">
+          <div class="col-lg-11 col-12">
+            <h1 class="section-title mb-lg-5 mb-3">We Deliver <br class="d-lg-block d-none"> Digital Productivity</h1>
+            <p class="section-text col-lg-10 col-12">
+              We craft technology solutions that digitally bond and transform the productivity of our customers and their citizens, workers, consumers, and partners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  

@@ -1,0 +1,102 @@
+.card {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img-top {
+        height: 330px;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        color: #5E6282;
+        margin: 0;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 24px;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        i {
+            font-size: 16px;
+            color: #13BEFF;
+            margin-right: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #707070;
+            margin: 0;
+        }
+    }
+
+    .details {
+        margin-top: 10px;
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            color: #5E6282;
+            background-color: #74747433;
+            border-radius: 10px;
+            padding: 0 12px;
+            text-align: center;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 16px;
+                color: #13BEFF;
+                margin-left: 15px;
+                cursor: pointer;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: fit-content;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 992px) {
+    .card {
+        max-width: 350px;
+    }
+}

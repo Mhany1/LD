@@ -1,0 +1,12 @@
+<div class="container" *ngIf="newsDetails">
+    <img loading="lazy" [src]="newsDetails?.urlToImage ? newsDetails?.urlToImage : '../../../../assets/Images/image-1.png'" class="text-center h-20" alt="{{ newsDetails?.title }}" />
+    <h1>{{ newsDetails?.title }}</h1>
+    <p>{{ newsDetails?.content }}</p>
+    <p><strong>Published Date:</strong> {{ newsDetails?.publishedDate }}</p>
+    <p><strong>Category:</strong> {{ getCategoryName(newsDetails?.categoryID)}}</p>
+  </div>
+  
+  <div *ngIf="!newsDetails">
+    <p>Loading news details...</p>
+  </div>
+  

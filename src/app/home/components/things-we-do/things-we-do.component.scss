@@ -1,0 +1,153 @@
+    // Variables for consistency
+    $primary-color: #F215B6;
+    $secondary-color: #253776;
+    $text-color: #FFFFFF;
+    $font-size-lg: 55px;
+    $font-size-sm: 28px;
+
+    .section-content {
+        min-height: 750px;
+        position: relative;
+
+        // Image container with responsive behavior
+        .img-container {
+            width: 70%;
+            z-index: 9;
+            position: absolute;
+            left: 2%;
+            top: 10%;
+        
+            .image-wrapper {
+                position: relative;
+        
+                .image-title {
+                    position: absolute; // Position it over the image
+                    bottom: 33%; // Adjust based on your preference
+                    left: 10px; // Adjust based on your preference
+                    color: $text-color; // Use your defined text color
+                    padding: 5px; // Optional: some padding
+                    border-radius: 4px; // Optional: rounded corners
+                    font-size: 24px;
+                    z-index: 2; // Ensure it stays above the image
+                    font-weight: 700;
+                }
+        
+                .read-more {
+                    position: absolute;
+                    bottom: 17%; // Adjust based on your preference
+                    left: 10px; // Align with the title
+                    color: $text-color; // Use your defined text color
+                    opacity: 0; // Initially hidden
+                    text-decoration: none; // Remove underline
+                    transition: opacity 0.3s; // Smooth opacity transition
+                    z-index: 2; // Ensure it stays above the image
+                    font-size: 17px;
+                    padding: 5px;
+                }
+        
+                .image {
+                    height: 250px;
+                    width: 100%;
+                    display: block;
+                    filter: contrast(0.5); // Initial contrast
+                    transition: filter 0.3s ease-in-out; // Smooth brightness transition
+                    cursor: pointer;
+                }
+        
+                &:hover {
+                    .image {
+                        filter: brightness(0.5); // Increase brightness on hover
+                    }
+        
+                    .read-more {
+                        opacity: 1; // Show "Read more" on hover
+                    }
+                }
+            }
+        
+            .spacer {
+                height: 250px;
+            }
+        
+            // Responsive behavior for smaller screens
+            @media (max-width: 768px) {
+                width: 90%;
+        
+                .image {
+                    height: 150px;
+                }
+        
+                .spacer {
+                    height: 150px;
+                }
+            }
+        }
+        
+
+        .text-container {
+            direction: rtl;
+            width: 63.9%;
+            line-height: 3rem;
+            z-index: 1;
+
+            // Content section with padding and background
+            .second-section {
+                background-color: $primary-color;
+                padding: 5rem 3.5rem;
+
+                .section-title {
+                    font-size: $font-size-lg;
+                    font-weight: 700;
+                    color: $secondary-color;
+                    margin-bottom: 1.5rem;
+                    line-height: 1.2;
+                    text-align: right;
+
+                    // Responsive for mobile screens
+                    @media (max-width: 768px) {
+                        font-size: 22px;
+                        text-align: center;
+                    }
+                }
+
+                .section-text {
+                    font-size: $font-size-sm;
+                    font-weight: 400;
+                    color: $text-color;
+                    line-height: 1.8;
+                    margin-bottom: 1rem;
+                    text-align: right;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        // Responsive layout adjustments for smaller devices
+        @media (max-width: 992px) {
+            flex-direction: column;
+
+            .img-container {
+                width: 100%;
+                position: static;
+                left: auto;
+                top: 0%;
+
+                .image {
+                    height: 190px;
+                }
+            }
+
+            .text-container {
+                width: 100%;
+                text-align: center;
+
+                .second-section {
+                    padding: 2rem;
+                }
+            }
+        }
+    }

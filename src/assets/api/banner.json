@@ -1,0 +1,37 @@
+{
+    "slides": [
+        {
+            "id": 0,
+            "brief": "On-shore, offshore, nearshore and hybrid models for dedicated development, product building and staff augmentation.",
+            "order": 1,
+            "title": "Global IT Experts",
+            "imgUrl": "https://i.suar.me/y4pnq/m",
+            "itemUrl": "",
+            "category": "Outsource",
+            "videoUrl": "https://www.youtube.com/feed",
+            "colorCode": "FF7C16"
+        },
+        {
+            "id": 1,
+            "brief": "Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.",
+            "order": 3,
+            "title": "25 Years of Business Growth",
+            "imgUrl": "https://i.suar.me/Ko432/m",
+            "itemUrl": "",
+            "category": "Marking",
+            "videoUrl": "https://www.youtube.com/feed",
+            "colorCode": "F215B6"
+        },
+        {
+            "id": 2,
+            "brief": "Link Development,Our people, processes, and technologies thrive on digital breakthroughs.",
+            "order": 2,
+            "title": "Crafty Minds Reshaping",
+            "imgUrl": "https://up6.cc/2024/10/172963211319092.png",
+            "itemUrl": "",
+            "category": "Trendy Inside-Out",
+            "videoUrl": "https://www.youtube.com/feed",
+            "colorCode": "A6E51C"
+        }
+    ]
+}

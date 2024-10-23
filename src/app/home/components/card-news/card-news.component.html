@@ -1,0 +1,17 @@
+<div class="card">
+    <img loading="lazy" [src]="new?.urlToImage ? new?.urlToImage : '../../../../assets/Images/image-1.png'" class="card-img-top" alt="image_for_news">
+    <div class="card-body">
+        <p class="title pointer" (click)="goToDetails(new)">{{ new?.title }}</p>
+        <div class="info">
+            <i class="fa fa-calendar"></i>
+            <p>{{ new?.publishedDate }}</p>
+        </div>
+        <div class="details d-flex justify-content-between align-items-center pb-2">
+            <p class="mb-0">{{ getCategoryName(new?.categoryID) }}</p>
+            <div class="icons">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-retweet"></i>
+            </div>
+        </div>
+    </div>
+</div>
